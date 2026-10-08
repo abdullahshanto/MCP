@@ -1,0 +1,21 @@
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install FastMCP
+pip install fastmcp
+
+# Verify installation
+pip show fastmcp
+
+# Create server file
+touch server.py
+
+# Run MCP server
+python server.py
