@@ -28,3 +28,12 @@ def modulus(a: float, b: float) -> float:
         raise ValueError("Cannot perform modulus by zero")
     return a % b
 
+@mcp.tool()
+def square_root(number: float) -> float:
+    """Calculate square root."""
+    if number < 0:
+        raise ValueError("Cannot calculate square root of a negative number")
+    return math.sqrt(number)
+
+if __name__ == "__main__":
+    mcp.run()
