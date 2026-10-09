@@ -1,13 +1,3 @@
-from fastmcp import FastMCP
-import math
-
-# Create MCP Server
-mcp = FastMCP("Calculator")
-
-@mcp.tool()
-def add(a: float, b: float) -> float:
-    """Add two numbers."""
-    return a + b
 
 @mcp.tool()
 def subtract(a: float, b: float) -> float:
